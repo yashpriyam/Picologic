@@ -1,5 +1,5 @@
 class PicsController < ApplicationController
-  before_action :find_pic, only: [:show, :edit, :update, :delete]
+  before_action :find_pic, only: [:show, :edit, :update, :destroy]
 
   def index
     @pics = Pic.all.order("created_at DESC")
@@ -10,11 +10,11 @@ class PicsController < ApplicationController
 
 
   def new
-    @pic = Pic.new
+    @pic = current_user.pics.build
   end
 
   def create
-    @pic = Pic.new(pic_params)
+    @pic = current_user.pics.build(pic_params)
 
     if @pic.save
       redirect_to @pic, notice: "yess! it was posted!"
@@ -34,8 +34,8 @@ class PicsController < ApplicationController
     end
   end
 
-  def delete
-    @pic.delete
+  def destroy
+    @pic.destroy
     redirect_to root_path
   end
 

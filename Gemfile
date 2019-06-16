@@ -32,6 +32,7 @@ gem 'haml', '~> 5.1'
 gem 'sdoc', '~> 1.0'
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4'
+gem 'devise', '~> 4.6'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
