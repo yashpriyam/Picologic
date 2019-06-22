@@ -38,6 +38,7 @@ gem 'bootstrap-sass', '~> 3.4'
 gem 'devise', '~> 4.6'
 gem 'paperclip', '~> 4.2.0'
 gem 'masonry-rails', '~> 0.2.4'
+gem 'acts_as_votable', '~> 0.12.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
