@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 gem 'jquery', '~> 0.0.1'
 gem 'jquery_ujs_extended', '~> 0.0.3'
+gem 'jquery-rails', '~> 4.3'
 
 gem 'haml', '~> 5.1'
 gem 'sdoc', '~> 1.0'
@@ -36,6 +37,7 @@ gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4'
 gem 'devise', '~> 4.6'
 gem 'paperclip', '~> 4.2.0'
+gem 'masonry-rails', '~> 0.2.4'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
