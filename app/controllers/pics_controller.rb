@@ -35,6 +35,7 @@ class PicsController < ApplicationController
   end
 
   def destroy
+    @pic = Pic.find(params[:id])
     @pic.destroy
     redirect_to root_path
   end
@@ -42,7 +43,7 @@ class PicsController < ApplicationController
   private
 
   def pic_params
-    params.require(:pic).permit(:title, :description)
+    params.require(:pic).permit(:title, :description, :image)
   end
 
   def find_pic

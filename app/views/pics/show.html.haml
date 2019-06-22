@@ -1,3 +1,6 @@
+= image_tag @pic.image.url
+= image_tag @pic.image.url(:medium) 
+= image_tag @pic.image.url(:thumb)
 %h1= @pic.title
 %p= @pic.description
 %p
@@ -8,4 +11,4 @@ Pic by
 
 = link_to "Back", root_path
 = link_to "Edit", edit_pic_path
-= link_to "Delete", pic_path, method: :delete, data: { confirm: "Are you sure?" }
+= link_to "Delete", pic_path, :method => :destroy

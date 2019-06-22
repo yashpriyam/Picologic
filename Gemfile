@@ -27,13 +27,20 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
+gem 'jquery', '~> 0.0.1'
+gem 'jquery_ujs_extended', '~> 0.0.3'
 
 gem 'haml', '~> 5.1'
 gem 'sdoc', '~> 1.0'
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4'
 gem 'devise', '~> 4.6'
+gem 'paperclip', '~> 6.1'
+gem 'image_magick', '~> 0.1.9'
 
+gem 'brew-gem', '~> 1.0'
+gem 'rmagick-metadata', '~> 0.0.2'
+gem 'rmagick4j', '~> 0.3.8'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
