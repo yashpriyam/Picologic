@@ -226,7 +226,6 @@ PLATFORMS
 DEPENDENCIES
   acts_as_votable (~> 0.12.0)
   bootstrap-sass (~> 3.4)
-  bundler (~> 2.0)
   byebug
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
