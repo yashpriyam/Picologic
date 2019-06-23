@@ -6,3 +6,4 @@ $ ->
   $('#pics').imagesLoaded ->
     itemSelector: '.box'
     isFitWidth: true
+    
