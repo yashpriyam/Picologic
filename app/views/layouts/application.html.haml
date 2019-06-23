@@ -22,7 +22,7 @@
           %li= link_to "Join", new_user_registration_path
           %li= link_to "Log In", new_user_session_path
   .container
-    - flash.each do |name, msg|
-      = content_tag :div, msg, class: "alert alert-info"
+    -flash.each do |name, msg|
+      =content_tag :div, msg, class: "alert alert-info"
 
     = yield
