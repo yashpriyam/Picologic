@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20190622181956) do
     t.integer "user_id"
     t.string "image_file_name"
     t.string "image_content_type"
-    t.bigint "image_file_size"
+    t.integer "image_file_size"
     t.datetime "image_updated_at"
     t.index ["user_id"], name: "index_pics_on_user_id"
   end
@@ -45,10 +45,12 @@ ActiveRecord::Schema.define(version: 20190622181956) do
     t.boolean "vote_flag"
     t.string "vote_scope"
     t.integer "vote_weight"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope"
+    t.index ["votable_type", "votable_id"], name: "index_votes_on_votable_type_and_votable_id"
     t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope"
+    t.index ["voter_type", "voter_id"], name: "index_votes_on_voter_type_and_voter_id"
   end
 
 end
