@@ -35,7 +35,7 @@ gem 'sdoc', '~> 1.0'
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4'
 gem 'devise', '~> 4.6'
-gem 'paperclip', '~> 4.2.0'
+gem 'paperclip', '~> 6.1.0'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.12.0'
 # Use ActiveModel has_secure_password
@@ -54,7 +54,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'sqlite3'  
+  gem 'sqlite3'
 end
 
 group :production do
