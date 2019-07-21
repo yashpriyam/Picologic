@@ -38,6 +38,8 @@ gem 'devise', '~> 4.6'
 gem 'paperclip', '~> 6.1.0'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.12.0'
+gem 'mimemagic', '~> 0.3.3'
+gem 'terrapin', '~> 0.6.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
