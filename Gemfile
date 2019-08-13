@@ -7,6 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'dotenv-rails', groups: [:development, :test]
 gem 'rails', '~> 5.1.7'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
@@ -36,6 +37,7 @@ gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4'
 gem 'devise', '~> 4.6'
 gem 'paperclip', '~> 6.1.0'
+gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.12.0'
 gem 'mimemagic', '~> 0.3.3'
